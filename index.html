@@ -7,14 +7,14 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <!-- NAVIGATION -->
   <nav id="navbar">
     <div class="nav-inner">
-      <a href="#home" class="nav-logo">JEREMY MASON</a>
+      <div class="nav-logo-placeholder"></div>
       <button class="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -85,7 +85,9 @@
 
         <!-- Book 1 -->
         <article class="book-card">
-          <div class="book-number">01</div>
+          <div class="book-cover">
+            <img src="images/Dedicated 2 u.jpg" alt="Dedicated 2 U cover" />
+          </div>
           <div class="book-info">
             <h3>Dedicated 2 U</h3>
             <p>
@@ -100,7 +102,9 @@
 
         <!-- Book 2 -->
         <article class="book-card featured">
-          <div class="book-number">02</div>
+          <div class="book-cover">
+            <img src="images/Life and times.jpg" alt="The Life and Times of a Black Man cover" />
+          </div>
           <div class="book-info">
             <h3>The Life and Times<br/>of a Black Man</h3>
             <p>
@@ -118,7 +122,9 @@
 
         <!-- Book 3 -->
         <article class="book-card">
-          <div class="book-number">03</div>
+          <div class="book-cover">
+            <img src="images/Life is beautiful.jpg" alt="Life is Beautiful cover" />
+          </div>
           <div class="book-info">
             <h3>Life is Beautiful</h3>
             <p>
@@ -137,12 +143,65 @@
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section class="gallery">
-    <div class="gallery-track">
-      <img src="images/Jerms1.jpeg" alt="Jeremy Mason" />
-      <img src="images/Jerms2.jpeg" alt="Jeremy Mason" />
-      <img src="images/Jerms3.jpeg" alt="Jeremy Mason" />
+  <!-- INSTAGRAM VIDEOS -->
+  <section id="instagram" class="insta-section">
+    <div class="container">
+      <span class="section-label center">On Instagram</span>
+      <h2 class="center">Watch &amp; Follow</h2>
+      <div class="insta-grid">
+
+        <!-- Card 1 -->
+        <div class="insta-card">
+          <div class="insta-thumb">
+            <video class="insta-video-inline" src="images/Video1.mov" playsinline preload="auto"></video>
+            <div class="insta-play-overlay">
+              <div class="insta-play-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="insta-progress-bar"><div class="insta-progress-fill"></div></div>
+            <div class="insta-follow-card" hidden>
+              <p>Want to see more?</p>
+              <a href="https://www.instagram.com/_jaymason_/" target="_blank" rel="noopener" class="btn-primary">Follow @_jaymason_</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="insta-card">
+          <div class="insta-thumb">
+            <video class="insta-video-inline" src="images/Video2.mov" playsinline preload="auto"></video>
+            <div class="insta-play-overlay">
+              <div class="insta-play-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="insta-progress-bar"><div class="insta-progress-fill"></div></div>
+            <div class="insta-follow-card" hidden>
+              <p>Want to see more?</p>
+              <a href="https://www.instagram.com/_jaymason_/" target="_blank" rel="noopener" class="btn-primary">Follow @_jaymason_</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="insta-card">
+          <div class="insta-thumb">
+            <video class="insta-video-inline" src="images/Video3.mov" playsinline preload="auto"></video>
+            <div class="insta-play-overlay">
+              <div class="insta-play-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+            </div>
+            <div class="insta-progress-bar"><div class="insta-progress-fill"></div></div>
+            <div class="insta-follow-card" hidden>
+              <p>Want to see more?</p>
+              <a href="https://www.instagram.com/_jaymason_/" target="_blank" rel="noopener" class="btn-primary">Follow @_jaymason_</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
@@ -174,7 +233,7 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
-      <p class="footer-logo">JEREMY MASON</p>
+      <p class="footer-credit">Designed &amp; Built byePJ</p>
       <p class="footer-copy">&copy; 2024 Jeremy Mason. All rights reserved.</p>
     </div>
   </footer>
